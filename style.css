@@ -1,0 +1,124 @@
+/* Style général */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+
+header {
+  background-color: #2e8b57;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  }
+  header {
+      background-color: #2e8b57;
+      color: #1b1919;
+      padding: 20px;
+    
+      display: flex;                 
+      justify-content: space-around; 
+      align-items: center;           
+    }
+    header {
+      background-image: url("images/Poubelles.jpg");
+      background-size: cover;     
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+
+header h1, nav {
+  position: relative; 
+  z-index: 1;
+  margin: 0;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: rgb(9, 9, 9);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #2e8b57;
+}
+
+/* Formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #246b44;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2e8b57;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    height: 200px; /* header plus petit sur mobile */
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
